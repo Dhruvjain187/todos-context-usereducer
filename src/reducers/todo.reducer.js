@@ -14,7 +14,7 @@ const reducer = (state, action) => {
         todo.id === action.id ? { ...todo, task: action.newTask } : todo
       );
     default:
-      return state;
+      return state;//default
   }
 };
 export default reducer;
